@@ -62,7 +62,9 @@
 \DeclareMathOperator{\pr}{Pr}
 
 %%% Оглавление %%%
-
+<<<<<<< HEAD:Report/styles.tex
+%\renewcommand{\cftchapdotsep}{\cftdotsep}
+=======
 \renewcommand{\cftchapdotsep}{\cftdotsep}
 
 %%% Шаблон %%%
@@ -81,3 +83,4 @@
 \fancyhf{}                          % Очищаем текущие значения
 \fancyhead[C]{\thepage}             % Печатаем номер страницы на середине верхнего поля
 \renewcommand{\headrulewidth}{0pt}  % Убираем разделительную линию
+>>>>>>> c5fb44803fdd182ec808bbd8419e242b3be76996:Dissertation/styles.tex
