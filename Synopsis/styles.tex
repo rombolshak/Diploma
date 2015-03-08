@@ -13,15 +13,24 @@
 \voffset=0pt
 %\paperwidth=597pt
 %\paperheight=845pt
-\parindent=1.5cm %размер табуляции (для красной строки) в начале каждого абзаца
+\parindent=1.5cm                  % Размер табуляции (для красной строки) в начале каждого абзаца
 \renewcommand{\baselinestretch}{1.25}
 \newfloat{scheme}{tb}{sch}
 
-%%% Общая информация %%%
-\author{Фамилия И.О.} % Фамилия И.О. автора
-
 %%% Кодировки и шрифты %%%
-\renewcommand{\rmdefault}{ftm} % Включаем Times New Roman
+\ifxetex
+  \setmainlanguage{russian}
+  \setotherlanguage{english}
+  \defaultfontfeatures{Ligatures=TeX,Mapping=tex-text}
+  \setmainfont{Times New Roman}
+  \newfontfamily\cyrillicfont{Times New Roman}
+  \setsansfont{Arial}
+  \newfontfamily\cyrillicfontsf{Arial}
+  \setmonofont{Courier New}
+  \newfontfamily\cyrillicfonttt{Courier New}
+\else
+  \IfFileExists{pscyr.sty}{\renewcommand{\rmdefault}{ftm}}{}
+\fi
 
 %%% Выравнивание и переносы %%%
 \sloppy
@@ -30,9 +39,12 @@
 
 %%% Библиография %%%
 \makeatletter
-\bibliographystyle{utf8gost705u} % Оформляем библиографию в соответствии с ГОСТ 7.0.5
-\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
+\bibliographystyle{utf8gost71u}   % Оформляем библиографию по ГОСТ 7.1 (ГОСТ Р 7.0.11-2011, 5.6.7)
+\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку
 \makeatother
 
 %%% Изображения %%%
-\graphicspath{{images/}} % Пути к изображениям
+\graphicspath{{images/}}          % Пути к изображениям
+
+%%% Шаблон %%%
+\newcommand{\todo}[1]{\textcolor{red}{#1}}
