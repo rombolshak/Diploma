@@ -1,0 +1,64 @@
+\documentclass[aspectratio=169, notes=hide]{beamer}
+\usepackage{lscape}		% Для включения альбомных страниц
+\usepackage{geometry}	% Для последующего задания полей
+
+%%% Кодировки и шрифты %%%
+\usepackage{cmap}						% Улучшенный поиск русских слов в полученном pdf-файле
+\usepackage[T2A]{fontenc}				% Поддержка русских букв
+\usepackage[utf8]{inputenc}				% Кодировка utf8
+\usepackage[english, russian]{babel}	% Языки: русский, английский
+\usepackage{pscyr}						% Красивые русские шрифты
+
+%%% Математические пакеты %%%
+\usepackage{amsthm,amsfonts,amsmath,amssymb,amscd} % Математические дополнения от AMS
+
+
+%%% Таблицы %%%
+%\usepackage{longtable}					% Длинные таблицы
+%\usepackage{multirow,makecell,array}	% Улучшенное форматирование таблиц
+
+%%% Схемы и графики %%%
+\usepackage{tikz}
+\usetikzlibrary{arrows,chains,matrix,positioning,scopes,fit,shapes,decorations.markings}
+
+%%% Общее форматирование
+\usepackage[singlelinecheck=off,center]{caption}	% Многострочные подписи
+%\usepackage{soul}					% Поддержка переносоустойчивых подчёркиваний и зачёркиваний
+
+%%% Изображения %%%
+\usepackage{graphicx} % Подключаем пакет работы с графикой
+\graphicspath{{images/}} % Пути к изображениям
+
+\usetheme{Pittsburgh}
+\usecolortheme{beaver}
+\usepackage{pgfpages}
+\begin{document}
+\title{Моделирование релятивистской системы квантового распределения ключей}
+\subtitle{Промежуточный отчет о выполнении дипломной работы}
+\author{Большаков Роман, 523 группа \par
+Научный руководитель профессор Молотков С. Н. }
+\institute{Московский государственный университет имени М.В. Ломоносова\par
+Факультет вычислительной математики и кибернетики\par
+Кафедра суперкомпьютеров и квантовой информатики\par}
+\date{19 декабря 2014}
+\maketitle
+
+\note{
+Речь пойдет о квантовой криптографии. Квантовая криптография - синоним квантового распределения ключей.
+Есть классическая криптография: симметричная и асимметричная.
+Игра: два легитимных пользователя хотят обменяться некоей информацией так, чтобы никто кроме них эту информацию не знал.
+Абсолютно стойкая система - одноразовый блокнот.
+Но для этого нужно сначала распределить ключ между участниками.
+Этот порочный круг и разрывает квантовая криптография
+}
+
+
+\begin{frame}
+  \centering
+  \large
+  Спасибо за внимание
+\end{frame}
+
+
+\end{document}
+  \end{itemize}

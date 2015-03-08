@@ -1,8 +1,12 @@
 %%% Макет страницы %%%
-\geometry{a4paper,top=2cm,bottom=2cm,left=3cm,right=1cm}
+\geometry{a4paper,top=2.4cm,bottom=2.4cm,left=3cm,right=1.5cm}
 
 %%% Кодировки и шрифты %%%
+%\usepackage{setspace}
+%\onehalfspacing
 \renewcommand{\rmdefault}{ftm} % Включаем Times New Roman
+%\frenchspacing
+%\usepackage[nodisplayskipstretch]{setspace}
 
 %%% Выравнивание и переносы %%%
 \sloppy					% Избавляемся от переполнений
@@ -26,6 +30,24 @@
     colorlinks, linkcolor={linkcolor},
     citecolor={citecolor}, urlcolor={urlcolor}
 }
+
+\newtheorem{theorem}{Теорема}
+\newtheorem{definition}{Определение}
+
+%%% \paragraph работает как \subsubsubsection
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+\newcommand{\state}[1]{\ensuremath{\left| #1 \right\rangle}}
+\newcommand{\conjstate}[1]{\ensuremath{\left\langle #1 \right|}}
+\newcommand{\scalar}[2]{\ensuremath{\left\langle #1|#2\right\rangle}}
+\DeclareMathOperator{\tr}{Tr}
+\DeclareMathOperator{\pr}{Pr}
 
 %%% Оглавление %%%
 %\renewcommand{\cftchapdotsep}{\cftdotsep}
