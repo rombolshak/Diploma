@@ -1,31 +1,21 @@
-%%% Проверка используемого TeX-движка %%%
-\usepackage{ifxetex}
+%\usepackage{extsizes}
 
 %%% Поля и разметка страницы %%%
-\usepackage{lscape}                                 % Для включения альбомных страниц
-\usepackage{geometry}                               % Для последующего задания полей
-
-%%% Математические пакеты %%%
-<<<<<<< HEAD:Diploma/packages.tex.backup
-\usepackage{amsthm,amsfonts,amsmath,amssymb,amscd, amsthm} % Математические дополнения от AMS
-=======
-\usepackage{amsthm,amsfonts,amsmath,amssymb,amscd}  % Математические дополнения от AMS
+\usepackage{lscape}		% Для включения альбомных страниц
+\usepackage{geometry}	% Для последующего задания полей
 
 %%% Кодировки и шрифты %%%
-\ifxetex
-  \usepackage{polyglossia}                          % Поддержка многоязычности
-  \usepackage{fontspec}                             % TrueType-шрифты
-\else
-  \usepackage{cmap}                                 % Улучшенный поиск русских слов в полученном pdf-файле
-  \usepackage[T2A]{fontenc}                         % Поддержка русских букв
-  \usepackage[utf8]{inputenc}                       % Кодировка utf8
-  \usepackage[english, russian]{babel}              % Языки: русский, английский
-  \IfFileExists{pscyr.sty}{\usepackage{pscyr}}{}    % Красивые русские шрифты
-\fi
->>>>>>> c5fb44803fdd182ec808bbd8419e242b3be76996:Dissertation/packages.tex
+\usepackage{cmap}						% Улучшенный поиск русских слов в полученном pdf-файле
+\usepackage[T2A]{fontenc}				% Поддержка русских букв
+\usepackage[utf8]{inputenc}				% Кодировка utf8
+\usepackage[english, russian]{babel}	% Языки: русский, английский
+\usepackage{pscyr}						% Красивые русские шрифты
+
+%%% Математические пакеты %%%
+\usepackage{amsthm,amsfonts,amsmath,amssymb,amscd, amsthm} % Математические дополнения от AMS
 
 %%% Оформление абзацев %%%
-\usepackage{indentfirst}                            % Красная строка
+\usepackage{indentfirst} % Красная строка
 
 %%% Цвета %%%
 \usepackage[usenames]{color}
@@ -33,39 +23,30 @@
 \usepackage{colortbl}
 
 %%% Таблицы %%%
-\usepackage{longtable}                              % Длинные таблицы
-\usepackage{multirow,makecell,array}                % Улучшенное форматирование таблиц
+\usepackage{longtable}					% Длинные таблицы
+\usepackage{multirow,makecell,array}	% Улучшенное форматирование таблиц
 
 %%% Общее форматирование
-<<<<<<< HEAD:Diploma/packages.tex.backup
 \usepackage[singlelinecheck=off,center]{caption}	% Многострочные подписи
 \usepackage{soul}					% Поддержка переносоустойчивых подчёркиваний и зачёркиваний
-=======
-\usepackage[singlelinecheck=off,center]{caption}    % Многострочные подписи
-\usepackage{soul}                                   % Поддержка переносоустойчивых подчёркиваний и зачёркиваний
-\usepackage{icomma}                                 % Запятая в десятичных дробях
->>>>>>> c5fb44803fdd182ec808bbd8419e242b3be76996:Dissertation/packages.tex
+\usepackage{icomma}   
 
 %%% Библиография %%%
-\usepackage{cite}                                   % Красивые ссылки на литературу
+\usepackage{cite} % Красивые ссылки на литературу
 
 %%% Гиперссылки %%%
 \usepackage[linktocpage=true,plainpages=false,pdfpagelabels=false]{hyperref}
 
 %%% Изображения %%%
-\usepackage{graphicx}                               % Подключаем пакет работы с графикой
+\usepackage{graphicx} % Подключаем пакет работы с графикой
 
 %%% Оглавление %%%
 \usepackage{tocloft}
 
-<<<<<<< HEAD:Diploma/packages.tex.backup
 \usepackage{paralist}
 \usepackage{textcomp}
 \usepackage{comment}
-=======
-%%% Интервалы %%%
-\usepackage{setspace}
 
-%%% Колонтитулы %%%
+\usepackage{titlesec}
 \usepackage{fancyhdr}
->>>>>>> c5fb44803fdd182ec808bbd8419e242b3be76996:Dissertation/packages.tex
+\usepackage{setspace}
