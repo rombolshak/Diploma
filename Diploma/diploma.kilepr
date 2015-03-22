@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.3
-lastDocument=introduction.tex
+lastDocument=chapter2.tex
 masterDocument=diploma.tex
 name=diploma
 pkg_extIsRegExp=false
@@ -45,6 +45,34 @@ Indentation Mode=normal
 Mode=LaTeX
 
 [document-settings,item:chapter1/quantum_basics.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
+[document-settings,item:chapter2.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
+[document-settings,item:chapter2/common_description.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
+[document-settings,item:chapter2/hardware.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
+[document-settings,item:chapter2/postprocessing.tex]
 Bookmarks=
 Encoding=UTF-8
 Highlighting=LaTeX
@@ -148,7 +176,7 @@ encoding=UTF-8
 highlight=LaTeX
 line=6
 mode=LaTeX
-open=true
+open=false
 order=1
 
 [item:chapter1/classic_cryptography.tex]
@@ -159,7 +187,7 @@ highlight=LaTeX
 line=0
 mode=LaTeX
 open=true
-order=6
+order=2
 
 [item:chapter1/qkd_basics.tex]
 archive=true
@@ -169,7 +197,7 @@ highlight=LaTeX
 line=0
 mode=LaTeX
 open=true
-order=8
+order=4
 
 [item:chapter1/quantum_basics.tex]
 archive=true
@@ -179,7 +207,47 @@ highlight=LaTeX
 line=0
 mode=LaTeX
 open=true
+order=3
+
+[item:chapter2.tex]
+archive=true
+column=0
+encoding=UTF-8
+highlight=LaTeX
+line=0
+mode=LaTeX
+open=true
+order=5
+
+[item:chapter2/common_description.tex]
+archive=true
+column=0
+encoding=UTF-8
+highlight=LaTeX
+line=0
+mode=LaTeX
+open=true
+order=6
+
+[item:chapter2/hardware.tex]
+archive=true
+column=0
+encoding=UTF-8
+highlight=LaTeX
+line=0
+mode=LaTeX
+open=true
 order=7
+
+[item:chapter2/postprocessing.tex]
+archive=true
+column=0
+encoding=UTF-8
+highlight=LaTeX
+line=0
+mode=LaTeX
+open=true
+order=8
 
 [item:contents.tex]
 archive=true
@@ -213,10 +281,10 @@ order=-1
 
 [item:diploma.tex]
 archive=true
-column=0
+column=7
 encoding=UTF-8
 highlight=LaTeX
-line=6
+line=16
 mode=LaTeX
 open=true
 order=0
@@ -228,27 +296,27 @@ encoding=UTF-8
 highlight=LaTeX
 line=0
 mode=LaTeX
-open=true
+open=false
 order=5
 
 [item:introduction.tex]
 archive=true
-column=1
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=29
+line=26
 mode=LaTeX
-open=true
+open=false
 order=9
 
 [item:names.tex]
 archive=true
-column=28
+column=22
 encoding=UTF-8
 highlight=LaTeX
-line=5
+line=18
 mode=LaTeX
-open=true
+open=false
 order=3
 
 [item:packages.tex]
@@ -258,7 +326,7 @@ encoding=UTF-8
 highlight=LaTeX
 line=9
 mode=LaTeX
-open=true
+open=false
 order=2
 
 [item:references.tex]
@@ -279,7 +347,7 @@ highlight=LaTeX
 line=56
 mode=LaTeX
 open=true
-order=4
+order=1
 
 [item:title.tex]
 archive=true
@@ -292,6 +360,16 @@ open=false
 order=-1
 
 [item:utf8gost705u.bst]
+archive=true
+column=0
+encoding=
+highlight=
+line=0
+mode=
+open=false
+order=-1
+
+[item:utf8gost71u.bst]
 archive=true
 column=0
 encoding=
@@ -331,6 +409,30 @@ CursorLine=0
 JumpList=
 ViMarks=
 
+[view-settings,view=0,item:chapter2.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+ViMarks=
+
+[view-settings,view=0,item:chapter2/common_description.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+ViMarks=
+
+[view-settings,view=0,item:chapter2/hardware.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+ViMarks=
+
+[view-settings,view=0,item:chapter2/postprocessing.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+ViMarks=
+
 [view-settings,view=0,item:contents.tex]
 CursorColumn=0
 CursorLine=0
@@ -344,10 +446,10 @@ JumpList=
 ViMarks=.,0,0,[,0,0,],-1,-1
 
 [view-settings,view=0,item:diploma.tex]
-CursorColumn=0
-CursorLine=6
+CursorColumn=7
+CursorLine=16
 JumpList=
-ViMarks=.,5,45,[,5,15,],5,45
+ViMarks=.,16,26,[,16,16,],16,26
 
 [view-settings,view=0,item:helpers.tex]
 CursorColumn=0
@@ -356,14 +458,14 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:introduction.tex]
-CursorColumn=1
-CursorLine=29
+CursorColumn=0
+CursorLine=26
 JumpList=
 ViMarks=.,29,0,[,29,0,],29,0
 
 [view-settings,view=0,item:names.tex]
-CursorColumn=28
-CursorLine=5
+CursorColumn=22
+CursorLine=18
 JumpList=
 ViMarks=.,5,28,[,5,28,],5,28
 
