@@ -36,7 +36,6 @@
 В программе Requc сначала полностью просчитывается результат моделирования, который затем визуализируется. Это позволяет несколько упростить код и уменьшить число необходимых классов. В другой программе, Cascade (см. далее) такой подход не применим, так как существует зависимость одних шагов от результатов работы других. Как это было решено, описано в соответствующем разделе.
 
 Далее представлены снимки экрана программы в различные моменты выполнения. Исходный код доступен в приложении \ref{app:requc}.
-\clearpage
 \begin{figure}[h]
   \includegraphics[width=0.9\linewidth]{chapter3/requc_start_state}
   \caption{Начальное состояние программы Requc.}
@@ -67,6 +66,8 @@
   \includegraphics[width=0.9\linewidth]{chapter3/requc_screenshots/07_bob_detector}
   \caption{Срабатывание детектора Боба, отмечающего время прихода состояния.}
 \end{figure}
+
+\FloatBarrier
 
 \begin{figure}[h]
   \includegraphics[width=0.9\linewidth]{chapter3/requc_screenshots/08_bob_attenuator}
@@ -108,7 +109,6 @@
   \caption{Происходит деструктивная интерференция половинок, и в нужный временной интервал в детектор ничего не попадает.}
 \end{figure}
 
-\clearpage
 
 \begin{figure}[h]
   \includegraphics[width=0.9\linewidth]{chapter3/requc_screenshots/17_eva_catched}
@@ -144,3 +144,5 @@
   \includegraphics[width=0.9\linewidth]{chapter3/requc_screenshots/23_eva_detected}
   \caption{Фиксируется задержка состояния по времени, из чего делается заключение об имевшем место факте подслушивания. Соответствующие биты в ключ не войдут.}
 \end{figure}
+
+\FloatBarrier
