@@ -66,14 +66,13 @@
 %\renewcommand{\cftparskip}{-1mm}
 %\renewcommand{\cftdotsep}{1}
 \setcounter{tocdepth}{1}
-\renewcommand{\cftchapfont}{\normalsize\bfseries \MakeUppercase{Глава} }
+\renewcommand{\cftchapfont}{\normalsize\bfseries Глава }
 
 %% новая секция для специальных разделов likechapter %%	 
 \makeatletter
     \renewcommand{\@dotsep}{2}
-    \newcommand{\l@likechapter}[2]{{\bfseries\@dottedtocline{0}{0pt}{0pt}{\MakeUppercase{#1}}{#2}}}
+    \newcommand{\l@likechapter}[2]{{\bfseries\@dottedtocline{0}{0pt}{0pt}{#1}{#2}}}
 \makeatother
-
 
 %%% Списки %%%
 % Используем дефис для ненумерованных списков (ГОСТ 2.105-95, 4.1.7)
