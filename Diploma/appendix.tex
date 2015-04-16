@@ -1,9 +1,18 @@
+%\appendix
 \begin{appendices}
-\likechapter{Название первого приложения} \label{AppendixA}
+%\makeatletter
+%\let\oldacl@pp=\addcontentsline
+%\renewcommand{\addcontentsline}[3]{%
+%  \oldacl@pp{#1}{chapter}{#3}%
+%  }
+%\makeatother
+
+
+\chapter{Исходный код Requc} \label{app:requc}
 
 Некоторый текст.
 
-\section{Очень длинное название второго приложения, в котором продемонстрирована работа с длинными таблицами} \label{AppendixB}
+\chapter{Исходный код Cascade} \label{app:cascade}
 
 \begin{comment}
  \section{Подраздел приложения}\label{AppendixB1}
@@ -20,5 +29,5 @@
 
 \section{И ещё один подраздел приложения} \label{AppendixB4}
 \end{comment}
-Нужно больше подразделов приложения!
+Нужно больше подразделов приложения!	
 \end{appendices}

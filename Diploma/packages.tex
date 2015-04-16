@@ -8,16 +8,12 @@
 \usepackage{geometry}	% Для последующего задания полей
 
 %%% Кодировки и шрифты %%%
-\ifxetex
-  \usepackage{polyglossia}                          % Поддержка многоязычности
-  \usepackage{fontspec}                             % TrueType-шрифты
-\else
-  \usepackage{cmap}                                 % Улучшенный поиск русских слов в полученном pdf-файле
-  \usepackage[T2A]{fontenc}                         % Поддержка русских букв
-  \usepackage[utf8]{inputenc}                       % Кодировка utf8
-  \usepackage[english, russian]{babel}              % Языки: русский, английский
-  \IfFileExists{pscyr.sty}{\usepackage{pscyr}}{}    % Красивые русские шрифты
-\fi
+
+\usepackage{cmap}                                 % Улучшенный поиск русских слов в полученном pdf-файле
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\IfFileExists{pscyr.sty}{\usepackage{pscyr}}{}    % Красивые русские шрифты
 
 %%% Математические пакеты %%%
 \usepackage{amsthm,amsfonts,amsmath,amssymb,amscd, amsthm} % Математические дополнения от AMS
@@ -45,6 +41,7 @@
 
 %%% Гиперссылки %%%
 \usepackage[linktocpage=true,plainpages=false,pdfpagelabels=false]{hyperref}
+\usepackage{bookmark} % fix errors in appendix toc
 
 %%% Изображения %%%
 \usepackage{graphicx} % Подключаем пакет работы с графикой
@@ -57,6 +54,7 @@
 \usepackage{comment}
 
 \usepackage{titlesec} % оглавление
+\usepackage{titletoc}% http://ctan.org/pkg/titletoc
 \usepackage{fancyhdr} % колонтитулы
 \usepackage{setspace} % 
 
@@ -64,4 +62,4 @@
 \usepackage[newfloat]{minted} % исходный код 
 \usepackage{placeins} % \FloatBarrier
 
-\usepackage[titletoc]{appendix}
+\usepackage{appendix}

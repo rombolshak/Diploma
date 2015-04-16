@@ -66,13 +66,59 @@
 %\renewcommand{\cftparskip}{-1mm}
 %\renewcommand{\cftdotsep}{1}
 \setcounter{tocdepth}{1}
-\renewcommand{\cftchapfont}{\normalsize\bfseries Глава }
+%\renewcommand{\cftchapfont}{\normalsize\bfseries Глава }
+\makeatletter
+
+\def\@chapapp{Глава} % костыль на костыле
+\titlecontents{chapter}%
+ [0em]% 
+ {\addvspace{1em}}%
+ {\bfseries\protect\@chapapp\ \thecontentslabel\quad}% 
+ {\hspace{-0em}}% 
+ {\cftchapleader\contentspage}% 
+ [\addvspace{0pt}]% 
+
+\g@addto@macro\appendices{%
+  \addtocontents{toc}{\protect\renewcommand{\protect\@chapapp}{\appendixname}}%
+}
+
+\makeatother
+
+\makeatletter
+\let\oriAlph\Alph
+\let\orialph\alph
+\renewcommand{\@resets@pp}{\par
+  \@ppsavesec
+  \stepcounter{@pps}
+  \setcounter{section}{0}%
+  \if@chapter@pp
+    \setcounter{chapter}{0}%
+    \renewcommand\@chapapp{\appendixname}%
+    \renewcommand\thechapter{\@Alph\c@chapter}%
+  \else
+    \setcounter{subsection}{0}%
+    \renewcommand\thesection{\@Alph\c@section}%
+  \fi
+  \if@pphyper
+    \if@chapter@pp
+      \renewcommand{\theHchapter}{\theH@pps.\oriAlph{chapter}}%
+    \else
+      \renewcommand{\theHsection}{\theH@pps.\oriAlph{section}}%
+    \fi
+    \def\Hy@chapapp{appendix}%
+  \fi
+  \restoreapp
+}
+\makeatother
 
 %% новая секция для специальных разделов likechapter %%	 
 \makeatletter
-    \renewcommand{\@dotsep}{2}
-    \newcommand{\l@likechapter}[2]{{\bfseries\@dottedtocline{0}{0pt}{0pt}{#1}{#2}}}
+    %\renewcommand{\@dotsep}{4}
+    \newcommand{\l@likechapter}[2]{{\@dottedtocline{0}{0pt}{0pt}{\textbf{#1}}{#2}}}
 \makeatother
+%\input{appendixchapter}
+
+
 
 %%% Списки %%%
 % Используем дефис для ненумерованных списков (ГОСТ 2.105-95, 4.1.7)
