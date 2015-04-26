@@ -30,3 +30,5 @@
 *.backup
 *.*~*
 _minted-*
+*.backup
+
