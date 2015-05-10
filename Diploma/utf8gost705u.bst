@@ -1026,8 +1026,8 @@ FUNCTION {editor.organization.after}
 FUNCTION {format.url}
 { url empty$
     { "" }
-    { after.sentence 'output.state :=
-      "URL:  " url * "" *
+    { after.sentence 'output.state := 
+      "\par [HTML](" url * ")" *
     }
   if$
 }
